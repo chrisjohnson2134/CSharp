@@ -1,0 +1,15 @@
+C:\Users\cj106\OneDrive\Documents\C#\Blandford_projects (2)\codeSample\Connect 4\client\Server\bin\Debug\Server.exe.config
+C:\Users\cj106\OneDrive\Documents\C#\Blandford_projects (2)\codeSample\Connect 4\client\Server\bin\Debug\Server.exe
+C:\Users\cj106\OneDrive\Documents\C#\Blandford_projects (2)\codeSample\Connect 4\client\Server\bin\Debug\Server.pdb
+C:\Users\cj106\OneDrive\Documents\C#\Blandford_projects (2)\codeSample\Connect 4\client\Server\obj\Debug\Client.csprojAssemblyReference.cache
+C:\Users\cj106\OneDrive\Documents\C#\Blandford_projects (2)\codeSample\Connect 4\client\Server\obj\Debug\MainWindow.g.cs
+C:\Users\cj106\OneDrive\Documents\C#\Blandford_projects (2)\codeSample\Connect 4\client\Server\obj\Debug\App.g.cs
+C:\Users\cj106\OneDrive\Documents\C#\Blandford_projects (2)\codeSample\Connect 4\client\Server\obj\Debug\Server_MarkupCompile.cache
+C:\Users\cj106\OneDrive\Documents\C#\Blandford_projects (2)\codeSample\Connect 4\client\Server\obj\Debug\Server_MarkupCompile.lref
+C:\Users\cj106\OneDrive\Documents\C#\Blandford_projects (2)\codeSample\Connect 4\client\Server\obj\Debug\MainWindow.baml
+C:\Users\cj106\OneDrive\Documents\C#\Blandford_projects (2)\codeSample\Connect 4\client\Server\obj\Debug\Server.g.resources
+C:\Users\cj106\OneDrive\Documents\C#\Blandford_projects (2)\codeSample\Connect 4\client\Server\obj\Debug\Server.Properties.Resources.resources
+C:\Users\cj106\OneDrive\Documents\C#\Blandford_projects (2)\codeSample\Connect 4\client\Server\obj\Debug\Client.csproj.GenerateResource.cache
+C:\Users\cj106\OneDrive\Documents\C#\Blandford_projects (2)\codeSample\Connect 4\client\Server\obj\Debug\Client.csproj.CoreCompileInputs.cache
+C:\Users\cj106\OneDrive\Documents\C#\Blandford_projects (2)\codeSample\Connect 4\client\Server\obj\Debug\Server.exe
+C:\Users\cj106\OneDrive\Documents\C#\Blandford_projects (2)\codeSample\Connect 4\client\Server\obj\Debug\Server.pdb

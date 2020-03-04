@@ -1,0 +1,42 @@
+c:\users\cj106\documents\visual studio 2017\Projects\GoldenButton\GoldenButton\bin\Debug\GoldenButton.exe.config
+c:\users\cj106\documents\visual studio 2017\Projects\GoldenButton\GoldenButton\bin\Debug\GoldenButton.exe
+c:\users\cj106\documents\visual studio 2017\Projects\GoldenButton\GoldenButton\bin\Debug\GoldenButton.pdb
+c:\users\cj106\documents\visual studio 2017\Projects\GoldenButton\GoldenButton\obj\Debug\GoldenButton.csprojResolveAssemblyReference.cache
+c:\users\cj106\documents\visual studio 2017\Projects\GoldenButton\GoldenButton\obj\Debug\MainWindow.g.cs
+c:\users\cj106\documents\visual studio 2017\Projects\GoldenButton\GoldenButton\obj\Debug\App.g.cs
+c:\users\cj106\documents\visual studio 2017\Projects\GoldenButton\GoldenButton\obj\Debug\GoldenButton_MarkupCompile.cache
+c:\users\cj106\documents\visual studio 2017\Projects\GoldenButton\GoldenButton\obj\Debug\GoldenButton_MarkupCompile.lref
+c:\users\cj106\documents\visual studio 2017\Projects\GoldenButton\GoldenButton\obj\Debug\MainWindow.baml
+c:\users\cj106\documents\visual studio 2017\Projects\GoldenButton\GoldenButton\obj\Debug\GoldenButton.g.resources
+c:\users\cj106\documents\visual studio 2017\Projects\GoldenButton\GoldenButton\obj\Debug\GoldenButton.Properties.Resources.resources
+c:\users\cj106\documents\visual studio 2017\Projects\GoldenButton\GoldenButton\obj\Debug\GoldenButton.csproj.GenerateResource.Cache
+c:\users\cj106\documents\visual studio 2017\Projects\GoldenButton\GoldenButton\obj\Debug\GoldenButton.exe
+c:\users\cj106\documents\visual studio 2017\Projects\GoldenButton\GoldenButton\obj\Debug\GoldenButton.pdb
+C:\Users\cj106\Desktop\GoldenButton\GoldenButton\obj\Debug\GoldenButton.csprojResolveAssemblyReference.cache
+C:\Users\cj106\Desktop\GoldenButton\GoldenButton\obj\Debug\MainWindow.g.cs
+C:\Users\cj106\Desktop\GoldenButton\GoldenButton\obj\Debug\App.g.cs
+C:\Users\cj106\Desktop\GoldenButton\GoldenButton\obj\Debug\GoldenButton_MarkupCompile.cache
+C:\Users\cj106\Desktop\GoldenButton\GoldenButton\obj\Debug\GoldenButton_MarkupCompile.lref
+C:\Users\cj106\Desktop\GoldenButton\GoldenButton\obj\Debug\GoldenButton.exe
+C:\Users\cj106\Desktop\GoldenButton\GoldenButton\obj\Debug\GoldenButton.pdb
+C:\Users\cj106\Desktop\GoldenButton\GoldenButton\bin\Debug\GoldenButton.exe.config
+C:\Users\cj106\Desktop\GoldenButton\GoldenButton\bin\Debug\GoldenButton.exe
+C:\Users\cj106\Desktop\GoldenButton\GoldenButton\bin\Debug\GoldenButton.pdb
+C:\Users\cj106\Desktop\GoldenButton\GoldenButton\obj\Debug\MainWindow.baml
+C:\Users\cj106\Desktop\GoldenButton\GoldenButton\obj\Debug\GoldenButton.g.resources
+C:\Users\cj106\Desktop\GoldenButton\GoldenButton\obj\Debug\GoldenButton.Properties.Resources.resources
+C:\Users\cj106\Desktop\GoldenButton\GoldenButton\obj\Debug\GoldenButton.csproj.GenerateResource.Cache
+C:\Users\cj106\Desktop\Blandford_projects\GoldenButton\GoldenButton\bin\Debug\GoldenButton.exe.config
+C:\Users\cj106\Desktop\Blandford_projects\GoldenButton\GoldenButton\bin\Debug\GoldenButton.exe
+C:\Users\cj106\Desktop\Blandford_projects\GoldenButton\GoldenButton\bin\Debug\GoldenButton.pdb
+C:\Users\cj106\Desktop\Blandford_projects\GoldenButton\GoldenButton\obj\Debug\GoldenButton.csprojResolveAssemblyReference.cache
+C:\Users\cj106\Desktop\Blandford_projects\GoldenButton\GoldenButton\obj\Debug\MainWindow.g.cs
+C:\Users\cj106\Desktop\Blandford_projects\GoldenButton\GoldenButton\obj\Debug\App.g.cs
+C:\Users\cj106\Desktop\Blandford_projects\GoldenButton\GoldenButton\obj\Debug\GoldenButton_MarkupCompile.cache
+C:\Users\cj106\Desktop\Blandford_projects\GoldenButton\GoldenButton\obj\Debug\GoldenButton_MarkupCompile.lref
+C:\Users\cj106\Desktop\Blandford_projects\GoldenButton\GoldenButton\obj\Debug\MainWindow.baml
+C:\Users\cj106\Desktop\Blandford_projects\GoldenButton\GoldenButton\obj\Debug\GoldenButton.g.resources
+C:\Users\cj106\Desktop\Blandford_projects\GoldenButton\GoldenButton\obj\Debug\GoldenButton.Properties.Resources.resources
+C:\Users\cj106\Desktop\Blandford_projects\GoldenButton\GoldenButton\obj\Debug\GoldenButton.csproj.GenerateResource.Cache
+C:\Users\cj106\Desktop\Blandford_projects\GoldenButton\GoldenButton\obj\Debug\GoldenButton.exe
+C:\Users\cj106\Desktop\Blandford_projects\GoldenButton\GoldenButton\obj\Debug\GoldenButton.pdb

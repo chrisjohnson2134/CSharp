@@ -1,0 +1,41 @@
+﻿<Window x:Class="imageToAscii.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:imageToAscii"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="700.199" Width="1171.124">
+    <Grid>
+        <Image x:Name="origonalImage" HorizontalAlignment="Left" Height="500" VerticalAlignment="Top" Width="500" Margin="10,47,0,0" Stretch="None"/>
+        <Button x:Name="btn_1" Content="Parse Image" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="30,623,0,0" Click="parse_Click"/>
+        <Image x:Name="newImage" Stretch="Fill" HorizontalAlignment="Left" Height="500" VerticalAlignment="Top" Width="638" Margin="515,47,0,0"/>
+        <Menu x:Name="main_menu_bar" HorizontalAlignment="Left" Height="32" VerticalAlignment="Top" Width="1145" Margin="10,10,0,0">
+
+            <MenuItem Header="File" Name="fileMenu">
+                <MenuItem x:Name="fileSave" Header="Save Image" Click="fileSave_Click"  />
+                <MenuItem x:Name="fileLoad" Header="Load Image" Click="fileLoad_Click"  />
+            </MenuItem>
+
+            <MenuItem Header="Font Style" Name="Font">
+                <MenuItem x:Name="Consolas" Header="Consolas" Click="Consolas_Click_1"/>
+            </MenuItem>
+
+            <MenuItem Header="Font Size" Name="Font_Size">
+                <MenuItem x:Name="twelve" Header="12" Click="twelve_Click"/>
+                <MenuItem x:Name="ten" Header="10" Click="ten_Click"/>
+                <MenuItem x:Name="six" Header="6" Click="six_Click"/>
+            </MenuItem>
+            <MenuItem Header="Help/About" Name="help">
+                <MenuItem x:Name="author" Header="About Author" Click="authorAbout_Click" />
+                <MenuItem x:Name="tutorial" Header="tutorial" Click="tutorial_Click"  />
+            </MenuItem>
+            <MenuItem Header="EXIT" Name="exit" Click="exit_Click">
+            </MenuItem>
+        </Menu>
+        <Label x:Name="fontStyleLabel" Content="Font Style:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="305,636,0,0"/>
+        <Label x:Name="fontSizeLabel" Content="Font Size:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="305,605,0,0"/>
+
+
+    </Grid>
+</Window>
