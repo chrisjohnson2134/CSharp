@@ -69,3 +69,17 @@ C:\Users\cj106\Downloads\svr-clnt\svr-clnt\Server\Server\obj\Debug\Server.csproj
 C:\Users\cj106\Downloads\svr-clnt\svr-clnt\Server\Server\obj\Debug\Server.csproj.CoreCompileInputs.cache
 C:\Users\cj106\Downloads\svr-clnt\svr-clnt\Server\Server\obj\Debug\Server.exe
 C:\Users\cj106\Downloads\svr-clnt\svr-clnt\Server\Server\obj\Debug\Server.pdb
+C:\Users\cj106\OneDrive\Documents\C#\Connect 4\Server\Server\obj\Debug\Server.csprojAssemblyReference.cache
+C:\Users\cj106\OneDrive\Documents\C#\Connect 4\Server\Server\obj\Debug\MainWindow.g.cs
+C:\Users\cj106\OneDrive\Documents\C#\Connect 4\Server\Server\obj\Debug\App.g.cs
+C:\Users\cj106\OneDrive\Documents\C#\Connect 4\Server\Server\obj\Debug\Server_MarkupCompile.cache
+C:\Users\cj106\OneDrive\Documents\C#\Connect 4\Server\Server\obj\Debug\Server_MarkupCompile.lref
+C:\Users\cj106\OneDrive\Documents\C#\Connect 4\Server\Server\obj\Debug\Server.exe
+C:\Users\cj106\OneDrive\Documents\C#\Connect 4\Server\Server\obj\Debug\Server.pdb
+C:\Users\cj106\OneDrive\Documents\C#\Connect 4\Server\Server\bin\Debug\Server.exe.config
+C:\Users\cj106\OneDrive\Documents\C#\Connect 4\Server\Server\bin\Debug\Server.exe
+C:\Users\cj106\OneDrive\Documents\C#\Connect 4\Server\Server\bin\Debug\Server.pdb
+C:\Users\cj106\OneDrive\Documents\C#\Connect 4\Server\Server\obj\Debug\MainWindow.baml
+C:\Users\cj106\OneDrive\Documents\C#\Connect 4\Server\Server\obj\Debug\Server.g.resources
+C:\Users\cj106\OneDrive\Documents\C#\Connect 4\Server\Server\obj\Debug\Server.Properties.Resources.resources
+C:\Users\cj106\OneDrive\Documents\C#\Connect 4\Server\Server\obj\Debug\Server.csproj.GenerateResource.cache

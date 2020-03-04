@@ -33,49 +33,56 @@ namespace Server
         List<int> playerQueue = new List<int>();
         int winnerBoxClientNum = 0;
         int oponentBoxClientNum = 0;
+        Shapes makeShape = new Shapes();
+        Connect4Draw draw4;
+
         public MainWindow()
         {
             InitializeComponent();
             drawBoard();
+            draw4 = new Connect4Draw(boardCanvas);
         }
 
 
         #region draw
-        private Ellipse drawEllipse(double x, double y, SolidColorBrush brush)
-        {
-            //SolidColorBrush bluBrush = Brushes;
-            Ellipse ell1 = new Ellipse();
-            ell1.Height = 40;
-            ell1.Width = 40;
-            ell1.Fill = brush;
-            ell1.Margin = new Thickness(x, y, 0, 0);//placement
-            return ell1;
-        }
 
-        private void insertPuck(int i, int j)
-        {
-            if (logic.currPlayer == 'r')
-            {
-                boardCanvas.Children.Add(drawEllipse(i * 65 + 15, j * 50 + 15, Brushes.Yellow));
-                currElipse.Fill = Brushes.Red;
-            }
 
-            else
-            {
-                boardCanvas.Children.Add(drawEllipse(i * 65 + 15, j * 50 + 15, Brushes.Red));
-                currElipse.Fill = Brushes.Yellow;
-            }
+        /*
+         * Function:
+         * Parameters:
+         * Description:
+         */
+        //private void insertPuck(int i, int j)
+        //{
+        //    if (logic.currPlayer == 'r')
+        //    {
+        //        boardCanvas.Children.Add(makeShape.drawEllipse(i * 65 + 15, j * 50 + 15, Brushes.Yellow));
+        //        currElipse.Fill = Brushes.Red;
+        //    }
 
-        }
+        //    else
+        //    {
+        //        boardCanvas.Children.Add(makeShape.drawEllipse(i * 65 + 15, j * 50 + 15, Brushes.Red));
+        //        currElipse.Fill = Brushes.Yellow;
+        //    }
 
+        //}
+
+
+
+        /*
+         * Function:
+         * Parameters:
+         * Description:
+         */
         private void drawBoard()
         {
             boardCanvas.Children.Clear();
             for (int j = 0; j < 6; j++)
                 for (int i = 0; i < 7; i++)
-                    boardCanvas.Children.Add(drawEllipse(i * 65 + 15, j * 50 + 15, Brushes.White));
+                    boardCanvas.Children.Add(makeShape.drawEllipse(i * 65 + 15, j * 50 + 15, Brushes.White));
 
-            currElipse = drawEllipse(15, -50, Brushes.Red);
+            currElipse = makeShape.drawEllipse(15, -50, Brushes.Red);
             boardCanvas.Children.Add(currElipse);
         }
         #endregion
@@ -93,6 +100,12 @@ namespace Server
 
         int clientcount = 0;
 
+
+        /*
+         * Function:
+         * Parameters:
+         * Description:
+         */
         private void backgroundWorker1_DoWork(object sender, DoWorkEventArgs e)
         {
             String printtext;
@@ -125,6 +138,12 @@ namespace Server
             }
         }
 
+
+        /*
+         * Function:
+         * Parameters:
+         * Description:
+         */
         private void client_DoWork(object sender, DoWorkEventArgs e)
         {
             int clientnum = (int)e.Argument;
@@ -148,7 +167,7 @@ namespace Server
                     {
                         row = Convert.ToInt16(inputStream.Split(':')[1].Split(',')[0]);
                         col = Convert.ToInt16(inputStream.Split(':')[1].Split(',')[1]);
-                        this.Dispatcher.Invoke(() => { insertPuck(col, row); });
+                        this.Dispatcher.Invoke(() => { draw4.insertPuck(col, row,logic.currPlayer); });
                     }
 
                     else if (inputStream.Split(':')[0].Equals("move") && !winFlag)
@@ -212,6 +231,12 @@ namespace Server
             }
         }
 
+
+        /*
+         * Function:
+         * Parameters:
+         * Description:
+         */
         private void loosingPlayer(int player)
         {
             playerQueue.Add(playerQueue.ElementAt(player));
@@ -249,6 +274,12 @@ namespace Server
         }
 
 
+
+        /*
+         * Function:
+         * Parameters:
+         * Description:
+         */
         private void nameInput(int clientnum, string inputStream)
         {
             clientNames.Add(clientnum, inputStream.Split(':')[1]);
@@ -288,6 +319,12 @@ namespace Server
             sw[clientnum].Flush();
         }
 
+
+        /*
+         * Function:
+         * Parameters:
+         * Description:
+         */
         private void curseInput(int clientnum, string inputStream)
         {
             if (logic.currPlayer == 'r' && clientnum == playerQueue[0] || logic.currPlayer == 'y' && clientnum == playerQueue[1])
@@ -306,6 +343,12 @@ namespace Server
             }
         }
 
+
+        /*
+         * Function:
+         * Parameters:
+         * Description:
+         */
         private void moveInput(int clientnum, string inputStream)
         {
             if (logic.currPlayer == 'r' && clientnum == playerQueue[0] || logic.currPlayer == 'y' && clientnum == playerQueue[1])
@@ -317,7 +360,7 @@ namespace Server
                     temp = logic.move(col);
                     if (temp.Item1 != -1)
                     {
-                        insertPuck(temp.Item1, temp.Item2);
+                        draw4.insertPuck(temp.Item1, temp.Item2,logic.currPlayer);
                         foreach (int t in UsedClientNumbers)
                         {
                             sw[t].WriteLine("update:" + temp.Item2 + "," + temp.Item1 + "," + logic.currPlayer);
@@ -350,6 +393,12 @@ namespace Server
             }
         }
 
+
+        /*
+         * Function:
+         * Parameters:
+         * Description:
+         */
         private void messageClientsExcept(int except, string message)
         {
             foreach (int t in UsedClientNumbers)
@@ -362,6 +411,12 @@ namespace Server
             }
         }
 
+
+        /*
+         * Function:
+         * Parameters:
+         * Description:
+         */
         private void sendButton_ClickEvent(object sender, RoutedEventArgs e)
         {
             foreach (int t in UsedClientNumbers)
@@ -373,7 +428,11 @@ namespace Server
         }
 
 
-
+        /*
+         * Function:
+         * Parameters:
+         * Description:
+         */
         private void InsertText(string text)
         {
             // InvokeRequired required compares the thread ID of the
@@ -390,6 +449,11 @@ namespace Server
             }
         }
 
+        /*
+         * Function:
+         * Parameters:
+         * Description:
+         */
         private void KillMe(int threadnum)
         {
             if (this.chatListBox.Dispatcher.CheckAccess())
