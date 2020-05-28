@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29905.134
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "matrixSolver2", "matrixSolver2\matrixSolver2.csproj", "{E75C9071-FB15-480D-B3AB-01076E6A9D88}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "matrixSolver", "matrixSolver2\matrixSolver.csproj", "{E75C9071-FB15-480D-B3AB-01076E6A9D88}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
