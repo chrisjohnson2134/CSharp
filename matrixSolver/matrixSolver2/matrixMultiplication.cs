@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace matrixSolver2
+namespace matrixSolver
 {
     //TODO
     // -> pass in arrays

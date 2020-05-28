@@ -1,9 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Text;
 using System.Threading;
 
-namespace matrixSolver2
+namespace matrixSolver
 {
     class matrixMultiplicationParallel : matrix
     {
@@ -13,16 +14,19 @@ namespace matrixSolver2
         int parallelIndex;
         int threadCount;
         public double progress;
+        Stopwatch watch = new Stopwatch();
         System.Windows.Controls.ProgressBar bar;
+        System.Windows.Controls.Label time;
         Semaphore sem = new Semaphore(0, 1);
 
 
-        public matrixMultiplicationParallel(int size,int threadCount, System.Windows.Controls.ProgressBar bar)
+        public matrixMultiplicationParallel(int size,int threadCount, System.Windows.Controls.ProgressBar bar, System.Windows.Controls.Label time)
         {
             //set the size of the matrixes
             this.size = size;
             this.threadCount = threadCount;
             this.bar = bar;
+            this.time = time;
             //intialize the matrixes
             mult = new int[size, size];
             result = new int[size, size];
@@ -40,7 +44,7 @@ namespace matrixSolver2
 
         public void compute()
         {
-            Console.WriteLine("compute");
+            watch.Start();
             // Multiplying matrix a and b and storing in array mult.
             Thread[] threadList = new Thread[threadCount];
             sem.Release();
@@ -48,8 +52,8 @@ namespace matrixSolver2
             {
                 threadList[i] = new Thread(new ThreadStart(computeLine));
                 threadList[i].Start();
-                //threadList[i].Join();
             }
+
 
 
         }
@@ -63,7 +67,7 @@ namespace matrixSolver2
                 int i = parallelIndex;
                 parallelIndex++;
                 progress =(double) parallelIndex / size;
-                Console.WriteLine(progress);
+                //Console.WriteLine(progress);
                 bar.Dispatcher.Invoke(() =>
                 {
                     bar.Value = progress;
@@ -77,6 +81,12 @@ namespace matrixSolver2
                         result[i, j] += mult[i, k] * mult[k, j];
                     }
             }
+
+            watch.Stop();
+            TimeSpan b = watch.Elapsed;
+
+            time.Dispatcher.Invoke(() => { time.Content = watch.ElapsedMilliseconds; });
+            
 
         }
     }
