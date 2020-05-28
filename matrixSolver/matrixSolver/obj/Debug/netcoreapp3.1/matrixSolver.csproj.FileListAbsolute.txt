@@ -1,0 +1,17 @@
+C:\Users\cj106\source\repos\matrixSolver\matrixSolver\obj\Debug\netcoreapp3.1\matrixSolver.csprojAssemblyReference.cache
+C:\Users\cj106\source\repos\matrixSolver\matrixSolver\obj\Debug\netcoreapp3.1\MainWindow.g.cs
+C:\Users\cj106\source\repos\matrixSolver\matrixSolver\obj\Debug\netcoreapp3.1\App.g.cs
+C:\Users\cj106\source\repos\matrixSolver\matrixSolver\obj\Debug\netcoreapp3.1\matrixSolver_MarkupCompile.cache
+C:\Users\cj106\source\repos\matrixSolver\matrixSolver\obj\Debug\netcoreapp3.1\matrixSolver_MarkupCompile.lref
+C:\Users\cj106\source\repos\matrixSolver\matrixSolver\bin\Debug\netcoreapp3.1\matrixSolver.exe
+C:\Users\cj106\source\repos\matrixSolver\matrixSolver\bin\Debug\netcoreapp3.1\matrixSolver.deps.json
+C:\Users\cj106\source\repos\matrixSolver\matrixSolver\bin\Debug\netcoreapp3.1\matrixSolver.runtimeconfig.json
+C:\Users\cj106\source\repos\matrixSolver\matrixSolver\bin\Debug\netcoreapp3.1\matrixSolver.runtimeconfig.dev.json
+C:\Users\cj106\source\repos\matrixSolver\matrixSolver\bin\Debug\netcoreapp3.1\matrixSolver.dll
+C:\Users\cj106\source\repos\matrixSolver\matrixSolver\bin\Debug\netcoreapp3.1\matrixSolver.pdb
+C:\Users\cj106\source\repos\matrixSolver\matrixSolver\obj\Debug\netcoreapp3.1\MainWindow.baml
+C:\Users\cj106\source\repos\matrixSolver\matrixSolver\obj\Debug\netcoreapp3.1\matrixSolver.g.resources
+C:\Users\cj106\source\repos\matrixSolver\matrixSolver\obj\Debug\netcoreapp3.1\matrixSolver.AssemblyInfoInputs.cache
+C:\Users\cj106\source\repos\matrixSolver\matrixSolver\obj\Debug\netcoreapp3.1\matrixSolver.AssemblyInfo.cs
+C:\Users\cj106\source\repos\matrixSolver\matrixSolver\obj\Debug\netcoreapp3.1\matrixSolver.dll
+C:\Users\cj106\source\repos\matrixSolver\matrixSolver\obj\Debug\netcoreapp3.1\matrixSolver.pdb
