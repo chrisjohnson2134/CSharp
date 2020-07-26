@@ -47,27 +47,27 @@ namespace matrixSolver
 
 
 
-            //Stopwatch a = new Stopwatch();
+            Stopwatch a = new Stopwatch();
 
 
-            //double[,] mult;
-            //double[,] result;
-            //int size = Length;
-            //mult = new double[size, size];
-            //result = new double[size, size];
+            double[,] mult;
+            double[,] result;
+            int size = Length;
+            mult = new double[size, size];
+            result = new double[size, size];
 
-            ////intialize a matrix
-            //for (int i = 0; i < size; ++i)
-            //    for (int j = 0; j < size; ++j)
-            //    {
-            //        mult[i, j] = 0;
-            //    }
+            //intialize a matrix
+            for (int i = 0; i < size; ++i)
+                for (int j = 0; j < size; ++j)
+                {
+                    mult[i, j] = 0;
+                }
 
-            //a.Start();
-            //RunGpuPacked(mult, mult, result);
-            //a.Stop();
+            a.Start();
+            RunGpuPacked(mult, mult, result);
+            a.Stop();
 
-            //Console.WriteLine(a.ElapsedMilliseconds);
+            Console.WriteLine(a.ElapsedMilliseconds);
 
         }
 
@@ -80,7 +80,6 @@ namespace matrixSolver
 
         //gpu temp
         private const int BlockSize = 32;
-
         [GpuManaged]
         public static void RunGpuPacked(double[,] a, double[,] b, double[,] c)
         {
