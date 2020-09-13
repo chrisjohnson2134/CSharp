@@ -1,0 +1,27 @@
+﻿<Window x:Class="MVVM.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MVVM"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid Margin="20">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="AUTO"/>
+            <ColumnDefinition Width="AUTO"/>
+            <ColumnDefinition Width="AUTO"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="AUTO"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+
+        <Label Content="Item to Add : " Grid.Row="0" Grid.Column="0"/>
+        <TextBox Text="{Binding AddItemName}" Width="150" Grid.Row="0" Grid.Column="1"/>
+        <Button Content="Add Item" Command="{Binding AddCommand}" Grid.Row="0" Grid.Column="2" />
+
+        <DataGrid ItemsSource="{Binding ItemList}" IsReadOnly="True" Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="4"/>
+    </Grid>
+</Window>

@@ -359,7 +359,6 @@ namespace imageToAscii
             List<Tuple<int, char>> list = new List<Tuple<int, char>>();
             int constant = 255;
             //Console.WriteLine(getPixelWeight(width, height, 0, img));
-
             try
             {
 
