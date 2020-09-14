@@ -17,6 +17,7 @@
         <Grid.ColumnDefinitions>
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
-    
+        <Button Content="You Suck Max" Command="{Binding RunCommand}" Grid.Row="0"/>
+        <TextBlock Text="{Binding cc}" Grid.Row="1"/>
     </Grid>
 </Window>
