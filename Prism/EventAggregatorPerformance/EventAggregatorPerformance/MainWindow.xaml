@@ -9,15 +9,31 @@
     <Grid>
 
         <Grid.RowDefinitions>
-            <RowDefinition/>
-            <RowDefinition/>
-            <RowDefinition/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
         </Grid.RowDefinitions>
-        
+
         <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="Auto"/>
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
-        <Button Content="You Suck Max" Command="{Binding RunCommand}" Grid.Row="0"/>
-        <TextBlock Text="{Binding cc}" Grid.Row="1"/>
+
+
+        <Button Content="Subscribe Events" Command="{Binding SubscribeEventsCommand}"
+                Grid.Row="0" Grid.Column="0" Height="25" Margin="10"/>
+        <Label Content="Number of Subscribed Events : " Grid.Row="0" Grid.Column="1" VerticalAlignment="Center" />
+        <TextBox Text="{Binding NumberOfEvents}" Grid.Row="0" Grid.Column="2" Width="150" HorizontalAlignment="Left" VerticalAlignment="Center"  Margin="10" />
+
+        <Button Content="Run Timed" Command="{Binding RunCommand}"
+                Grid.Row="1" Grid.Column="0" Height="25" Margin="10" />
+
+        <Label Grid.Row="2" Grid.Column="1" Content="Event Aggregator : " />
+        <Label Grid.Row="2" Grid.Column="2" Content="{Binding AggregatorTime}" />
+        
+        <Label Grid.Row="3" Grid.Column="1" Content="Standard Events : " />
+        <Label Grid.Row="3" Grid.Column="2" Content="{Binding StandardTime}" />
     </Grid>
 </Window>
