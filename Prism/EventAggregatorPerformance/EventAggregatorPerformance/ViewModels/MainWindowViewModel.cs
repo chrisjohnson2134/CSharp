@@ -1,17 +1,15 @@
 ﻿using EventAggregatorPerformance.BasicClasses;
 using MVVM.Commands;
 using Prism.Events;
+using Prism.Mvvm;
 using System;
-using System.Collections.Generic;
 using System.ComponentModel;
 using System.Diagnostics;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.Threading;
 
-namespace EventAggregatorPerformance.ViewModel
+namespace EventAggregatorPerformance.ViewModels
 {
-    class PerformanceViewModel : INotifyPropertyChanged
+    class MainWindowViewModel : BindableBase, INotifyPropertyChanged
     {
         public event EventHandler incrementEvent;
 
@@ -20,11 +18,7 @@ namespace EventAggregatorPerformance.ViewModel
 
         Counter standardCounter = new Counter();
 
-
-
         IEventAggregator eventAGG;
-
-
 
         public RelayCommand RunCommand { get; set; }
         public RelayCommand SubscribeEventsCommand { get; set; }
@@ -82,7 +76,7 @@ namespace EventAggregatorPerformance.ViewModel
             }
         }
 
-        public PerformanceViewModel()
+        public MainWindowViewModel()
         {
             RunCommand = new RelayCommand(RunCommandMethod);
             SubscribeEventsCommand = new RelayCommand(SubscribeEvents);
@@ -112,6 +106,7 @@ namespace EventAggregatorPerformance.ViewModel
             {
                 standardCounter.ThresholdReached += c_ThresholdReached;
                 eventAGG.GetEvent<Counter>().Subscribe(cc_Inc);
+                //eventAGG.GetEvent<Counter>().Subscribe(cc_Inc,ThreadOption.BackgroundThread);
             }
         }
 
@@ -130,9 +125,6 @@ namespace EventAggregatorPerformance.ViewModel
 
             _standardTime = "Standard Time Microseconds : ";
             StandardTime += watch.ElapsedMilliseconds;
-
-            Console.WriteLine(watch.ElapsedMilliseconds);
-
         }
 
 
@@ -145,14 +137,12 @@ namespace EventAggregatorPerformance.ViewModel
             eventAGG.GetEvent<Counter>().Publish(0);
             c.Add(_numberOfEvents);
 
-            while (nonStaticCounterVariable <= (_numberOfEvents - 1))
+            while (nonStaticCounterVariable <= (_numberOfEvents - 100))
             { }
             watch.Stop();
 
             AggregatorTime = "Aggregator Time Microseconds : ";
             AggregatorTime += watch.ElapsedMilliseconds;
-            
-            Console.WriteLine("finished");
         }
 
 

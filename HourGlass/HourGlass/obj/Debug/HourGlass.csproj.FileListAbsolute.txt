@@ -70,3 +70,18 @@ C:\Users\cj106\OneDrive\Documents\C#\Blandford_projects (2)\codeSample\HourGlass
 C:\Users\cj106\OneDrive\Documents\C#\Blandford_projects (2)\codeSample\HourGlass\HourGlass\obj\Debug\HourGlass.csproj.CoreCompileInputs.cache
 C:\Users\cj106\OneDrive\Documents\C#\Blandford_projects (2)\codeSample\HourGlass\HourGlass\obj\Debug\HourGlass.exe
 C:\Users\cj106\OneDrive\Documents\C#\Blandford_projects (2)\codeSample\HourGlass\HourGlass\obj\Debug\HourGlass.pdb
+C:\Users\bear\Documents\GitHub\CSharp\HourGlass\HourGlass\bin\Debug\HourGlass.exe.config
+C:\Users\bear\Documents\GitHub\CSharp\HourGlass\HourGlass\bin\Debug\HourGlass.exe
+C:\Users\bear\Documents\GitHub\CSharp\HourGlass\HourGlass\bin\Debug\HourGlass.pdb
+C:\Users\bear\Documents\GitHub\CSharp\HourGlass\HourGlass\obj\Debug\HourGlass.csprojAssemblyReference.cache
+C:\Users\bear\Documents\GitHub\CSharp\HourGlass\HourGlass\obj\Debug\MainWindow.g.cs
+C:\Users\bear\Documents\GitHub\CSharp\HourGlass\HourGlass\obj\Debug\App.g.cs
+C:\Users\bear\Documents\GitHub\CSharp\HourGlass\HourGlass\obj\Debug\HourGlass_MarkupCompile.cache
+C:\Users\bear\Documents\GitHub\CSharp\HourGlass\HourGlass\obj\Debug\HourGlass_MarkupCompile.lref
+C:\Users\bear\Documents\GitHub\CSharp\HourGlass\HourGlass\obj\Debug\MainWindow.baml
+C:\Users\bear\Documents\GitHub\CSharp\HourGlass\HourGlass\obj\Debug\HourGlass.g.resources
+C:\Users\bear\Documents\GitHub\CSharp\HourGlass\HourGlass\obj\Debug\HourGlass.Properties.Resources.resources
+C:\Users\bear\Documents\GitHub\CSharp\HourGlass\HourGlass\obj\Debug\HourGlass.csproj.GenerateResource.cache
+C:\Users\bear\Documents\GitHub\CSharp\HourGlass\HourGlass\obj\Debug\HourGlass.csproj.CoreCompileInputs.cache
+C:\Users\bear\Documents\GitHub\CSharp\HourGlass\HourGlass\obj\Debug\HourGlass.exe
+C:\Users\bear\Documents\GitHub\CSharp\HourGlass\HourGlass\obj\Debug\HourGlass.pdb

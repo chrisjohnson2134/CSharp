@@ -1,7 +1,7 @@
-﻿using EventAggregatorPerformance.ViewModel;
+﻿using EventAggregatorPerformance.ViewModels;
 using System.Windows;
 
-namespace EventAggregatorPerformance
+namespace EventAggregatorPerformance.Views
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml
@@ -11,7 +11,6 @@ namespace EventAggregatorPerformance
         public MainWindow()
         {
             InitializeComponent();
-            this.DataContext = new PerformanceViewModel();
         }
     }
 }

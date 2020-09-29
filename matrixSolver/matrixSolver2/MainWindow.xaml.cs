@@ -34,7 +34,7 @@ namespace matrixSolver
             InitializeComponent();
             DataContext = this;
 
-            Length = 5000;
+            Length = 1000;
 
         }
 
