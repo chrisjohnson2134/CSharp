@@ -15,17 +15,15 @@ namespace matrixSolver
         int threadCount;
         public double progress;
         Stopwatch watch = new Stopwatch();
-        System.Windows.Controls.ProgressBar bar;
-        System.Windows.Controls.Label time;
+        System.Windows.Controls.TextBox time;
         Semaphore sem = new Semaphore(0, 1);
 
 
-        public matrixMultiplicationParallel(int size,int threadCount, System.Windows.Controls.ProgressBar bar, System.Windows.Controls.Label time)
+        public matrixMultiplicationParallel(int size,int threadCount, System.Windows.Controls.TextBox time)
         {
             //set the size of the matrixes
             this.size = size;
             this.threadCount = threadCount;
-            this.bar = bar;
             this.time = time;
             //intialize the matrixes
             mult = new int[size, size];
@@ -53,9 +51,6 @@ namespace matrixSolver
                 threadList[i] = new Thread(new ThreadStart(computeLine));
                 threadList[i].Start();
             }
-
-
-
         }
 
         //compute the line for each cell of the matrix
@@ -65,13 +60,8 @@ namespace matrixSolver
             {
                 sem.WaitOne();
                 int i = parallelIndex;
-                parallelIndex++;
+                
                 progress =(double) parallelIndex / size;
-                //Console.WriteLine(progress);
-                bar.Dispatcher.Invoke(() =>
-                {
-                    bar.Value = progress;
-                });
                 
                 sem.Release();
 
@@ -80,12 +70,14 @@ namespace matrixSolver
                     {
                         result[i, j] += mult[i, k] * mult[k, j];
                     }
+
+                parallelIndex++;
             }
 
             watch.Stop();
             TimeSpan b = watch.Elapsed;
 
-            time.Dispatcher.Invoke(() => { time.Content = watch.ElapsedMilliseconds; });
+            time.Dispatcher.Invoke(() => { time.Text = watch.ElapsedMilliseconds.ToString(); });
             
 
         }

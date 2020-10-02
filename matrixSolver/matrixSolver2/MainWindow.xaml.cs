@@ -34,18 +34,18 @@ namespace matrixSolver
             InitializeComponent();
             DataContext = this;
 
-            Length = 1000;
+            Length = 750;
 
         }
 
-        private void compBTN_Click(object sender, RoutedEventArgs e)
+        private void RunBenchmark_Click(object sender, RoutedEventArgs e)
         {
-            //int threadCount = Convert.ToInt32(threadCountTB.Text);
-            //matrixMultiplicationParallel para = new matrixMultiplicationParallel(Length, threadCount, parallelBar, paraTimeLBL);
+            int threadCount = Convert.ToInt32(NumCoresTextBox.Text);
+            matrixMultiplication singleCore = new matrixMultiplication(Length, SingleCoreTextBox);
+            matrixMultiplicationParallel para = new matrixMultiplicationParallel(Length, threadCount, ParallelCoreTextBox);
 
-            //para.compute();
-
-
+            singleCore.compute();
+            para.compute();
 
             Stopwatch a = new Stopwatch();
 
@@ -67,14 +67,7 @@ namespace matrixSolver
             RunGpuPacked(mult, mult, result);
             a.Stop();
 
-            Console.WriteLine(a.ElapsedMilliseconds);
-
-        }
-
-        private void resetBTN_Click(object sender, RoutedEventArgs e)
-        {
-            parallelBar.Value = 0;
-            paraTimeLBL.Content = 0;
+            CudaTextBox.Text = a.ElapsedMilliseconds.ToString();
         }
 
 
@@ -185,6 +178,8 @@ namespace matrixSolver
             else
                 return 0.0;
         }
+
+        
     }
 
 

@@ -5,22 +5,37 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:matrixSolver"
         mc:Ignorable="d"
-        Title="MainWindow" Height="446.949" Width="800">
+        Title="MainWindow" Height="200" Width="800">
     <Grid>
-        <Grid Width="300px" Margin="482,39,10,170" Background="#FFAFBB31">
-            <Button x:Name="compBTN" Content="Compute"  HorizontalAlignment="Left" VerticalAlignment="Top" Width="75"  Click="compBTN_Click" Margin="160,143,0,0"/>
-            <TextBox x:Name="threadCountTB" HorizontalAlignment="Left" Height="23"  TextWrapping="Wrap" Text="6" VerticalAlignment="Top" Width="120" Margin="115,115,0,0"/>
-            <Label Content="Thread Count" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="28,115,0,0"/>
-            <Button x:Name="resetBTN" Content="reset"  HorizontalAlignment="Left" VerticalAlignment="Top" Width="40" Margin="115,143,0,0" Click="resetBTN_Click"/>
-        </Grid>
-        <Grid Margin="38,39,369,170" Background="#FF31BBBB">
-            <ProgressBar x:Name="singleBar" HorizontalAlignment="Left" Height="33" VerticalAlignment="Top" Width="198" Margin="101,22,0,0" Maximum="1"/>
-            <ProgressBar x:Name="parallelBar" Value="{Binding WorkerState}" HorizontalAlignment="Left" Height="33" VerticalAlignment="Top" Width="198" Margin="101,70,0,0" Maximum="1" LargeChange="0.1"/>
-            <Label Content="Single" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="21,29,0,0"/>
-            <Label Content="Parallel" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="21,77,0,0"/>
-            <ProgressBar x:Name="parallelBar_Copy" Value="{Binding WorkerState}" HorizontalAlignment="Left" Height="33" VerticalAlignment="Top" Width="198" Margin="101,120,0,0" Maximum="1" LargeChange="0.1"/>
-            <Label Content="Cuda" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="21,127,0,0"/>
-            <Label x:Name="paraTimeLBL" Content="Parallel" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="313,77,0,0"/>
-        </Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <StackPanel Grid.Row="0" Grid.Column="0" Background="Gray">
+            <Label Name="SingleCoreLabel" Content="Single Core : " FontSize="18"/>
+            
+            <Label Name="ParallelCoreLabel" Content="Parallel Core : " FontSize="18"/>
+            
+            <Label Name="CudaLabel" Content="Cuda : " FontSize="18"/>
+        </StackPanel>
+
+        <StackPanel Grid.Row="0" Grid.Column="1" Background="Gray">
+            <TextBox Name="SingleCoreTextBox" Text="####" TextAlignment="Center" FontSize="18"/>
+
+            <TextBox Name="ParallelCoreTextBox" Text="####" TextAlignment="Center" FontSize="18"/>
+
+            <TextBox Name="CudaTextBox" Text="####" TextAlignment="Center" FontSize="18"/>
+        </StackPanel>
+
+        <StackPanel Grid.Row="0" Grid.Column="2" Background="Gray">
+            <Button x:Name="RunBenchmark" Content="Run Benchmark" Click="RunBenchmark_Click" FontSize="18"/>
+            <Label x:Name="NumCoresLabel" Content="Number of CPU Cores" HorizontalAlignment="Center" FontSize="18"/>
+            <TextBox x:Name="NumCoresTextBox" Text="6" Width="50" TextAlignment="Center" HorizontalAlignment="Center" FontSize="18"/>
+        </StackPanel>
     </Grid>
 </Window>
