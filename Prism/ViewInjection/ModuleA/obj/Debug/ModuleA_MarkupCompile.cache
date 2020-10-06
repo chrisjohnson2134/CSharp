@@ -4,7 +4,7 @@
 library
 C#
 .cs
-C:\Users\cj106\Documents\GitHub\CSharp\Prism\ViewInjection\ModuleA\obj\Debug\
+C:\Users\bear\Documents\GitHub\CSharp\Prism\ViewInjection\ModuleA\obj\Debug\
 ModuleA
 none
 false
@@ -12,9 +12,9 @@ DEBUG;TRACE
 
 1-439560384
 
-4-12930213
-191034013345
+3-1340918986
+19-172663916
 Views\ViewA.xaml;
 
-True
+False
 

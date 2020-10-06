@@ -122,6 +122,10 @@
       <Project>{34acfa91-9c9f-4bb6-a99c-e4a106978f91}</Project>
       <Name>ModuleA</Name>
     </ProjectReference>
+    <ProjectReference Include="..\ModuleBModule\ModuleB.csproj">
+      <Project>{9BE8A4B8-1E80-4712-A8A9-94AA3EB69234}</Project>
+      <Name>ModuleB</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

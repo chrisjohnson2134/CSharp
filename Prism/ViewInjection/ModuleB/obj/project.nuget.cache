@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "kX1W5zG5Fk//o6uiMrYJOGHCdd+xjSQBWcVqfH/iH6aYbpxg56Fadi4X0eiBGX3hYMOENHxhh+MiOpkvwJ0V8g==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\bear\\Documents\\GitHub\\CSharp\\Prism\\ViewInjection\\ModuleB\\ModuleB.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\bear\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\bear\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

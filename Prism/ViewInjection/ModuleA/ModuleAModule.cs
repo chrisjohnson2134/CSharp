@@ -2,7 +2,6 @@
 using Prism.Ioc;
 using Prism.Modularity;
 using Prism.Regions;
-using System.Windows.Controls;
 
 namespace ModuleA
 {
@@ -17,7 +16,7 @@ namespace ModuleA
 
         public void OnInitialized(IContainerProvider containerProvider)
         {
-            IRegion region = _regionManager.Regions["ContentRegion"];
+            IRegion region = _regionManager.Regions["ContentRegionA"];
 
             var view1 = containerProvider.Resolve<ViewA>();
             region.Add(view1);

@@ -1,5 +1,5 @@
 ﻿using ModuleA;
-using Prism;
+using ModuleB;
 using Prism.DryIoc;
 using Prism.Ioc;
 using Prism.Modularity;
@@ -26,6 +26,7 @@ namespace ViewInjection
         protected override void ConfigureModuleCatalog(IModuleCatalog moduleCatalog)
         {
             moduleCatalog.AddModule<ModuleAModule>();
+            moduleCatalog.AddModule<ModuleBModule>();
         }
     }
 }

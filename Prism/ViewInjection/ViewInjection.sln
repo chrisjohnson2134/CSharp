@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ViewInjection", "ViewInject
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ModuleA", "ModuleA\ModuleA.csproj", "{34ACFA91-9C9F-4BB6-A99C-E4A106978F91}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ModuleB", "ModuleBModule\ModuleB.csproj", "{9BE8A4B8-1E80-4712-A8A9-94AA3EB69234}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{34ACFA91-9C9F-4BB6-A99C-E4A106978F91}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{34ACFA91-9C9F-4BB6-A99C-E4A106978F91}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{34ACFA91-9C9F-4BB6-A99C-E4A106978F91}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9BE8A4B8-1E80-4712-A8A9-94AA3EB69234}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9BE8A4B8-1E80-4712-A8A9-94AA3EB69234}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9BE8A4B8-1E80-4712-A8A9-94AA3EB69234}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9BE8A4B8-1E80-4712-A8A9-94AA3EB69234}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
