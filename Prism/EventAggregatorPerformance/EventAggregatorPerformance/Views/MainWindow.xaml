@@ -32,10 +32,10 @@
         <Button Content="Run Timed" Command="{Binding RunCommand}"
                 Grid.Row="1" Grid.Column="0" Height="25" Margin="10" />
 
-        <Label Grid.Row="2" Grid.Column="1" Content="Event Aggregator : " />
+        <!--<Label Grid.Row="2" Grid.Column="1" Content="Event Aggregator : " />-->
         <Label Grid.Row="2" Grid.Column="2" Content="{Binding AggregatorTime}" />
         
-        <Label Grid.Row="3" Grid.Column="1" Content="Standard Events : " />
+        <!--<Label Grid.Row="3" Grid.Column="1" Content="Standard Events : " />-->
         <Label Grid.Row="3" Grid.Column="2" Content="{Binding StandardTime}" />
     </Grid>
 </Window>
