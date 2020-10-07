@@ -34,15 +34,15 @@ namespace matrixSolver
             InitializeComponent();
             DataContext = this;
 
-            Length = 750;
 
         }
 
         private void RunBenchmark_Click(object sender, RoutedEventArgs e)
         {
+            int size = Convert.ToInt32(MatrixSizeTextBox.Text);
             int threadCount = Convert.ToInt32(NumCoresTextBox.Text);
-            matrixMultiplication singleCore = new matrixMultiplication(Length, SingleCoreTextBox);
-            matrixMultiplicationParallel para = new matrixMultiplicationParallel(Length, threadCount, ParallelCoreTextBox);
+            matrixMultiplication singleCore = new matrixMultiplication(size, SingleCoreTextBox);
+            matrixMultiplicationParallel para = new matrixMultiplicationParallel(size, threadCount, ParallelCoreTextBox);
 
             singleCore.compute();
             para.compute();
@@ -52,7 +52,7 @@ namespace matrixSolver
 
             double[,] mult;
             double[,] result;
-            int size = Length;
+            
             mult = new double[size, size];
             result = new double[size, size];
 

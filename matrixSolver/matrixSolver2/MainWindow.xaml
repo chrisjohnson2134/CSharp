@@ -36,6 +36,8 @@
             <Button x:Name="RunBenchmark" Content="Run Benchmark" Click="RunBenchmark_Click" FontSize="18"/>
             <Label x:Name="NumCoresLabel" Content="Number of CPU Cores" HorizontalAlignment="Center" FontSize="18"/>
             <TextBox x:Name="NumCoresTextBox" Text="6" Width="50" TextAlignment="Center" HorizontalAlignment="Center" FontSize="18"/>
+            <Label x:Name="MatrixSizeLabel" Content="Matrix Size" HorizontalAlignment="Center" FontSize="18"/>
+            <TextBox x:Name="MatrixSizeTextBox" Text="750" Width="100" TextAlignment="Center" HorizontalAlignment="Center" FontSize="18"/>
         </StackPanel>
     </Grid>
 </Window>
