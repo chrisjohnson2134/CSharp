@@ -26,7 +26,7 @@ namespace RoslynParsing.Parser
             {
                 if (member is PropertyDeclarationSyntax property)
                 {
-                    cls.Properties.Add(new CsharpClass.CsharpProperty(
+                    cls.Properties.Add(new CsharpProperty(
                          property.Identifier.ValueText,
                          property.Type.ToString())
                      );
@@ -34,7 +34,7 @@ namespace RoslynParsing.Parser
 
                 else if (member is FieldDeclarationSyntax fieldDeclaration)
                 {
-                    cls.Fields.Add(new CsharpClass.CsharpField(
+                    cls.Fields.Add(new CsharpField(
                          fieldDeclaration.Declaration.Variables.First().ToString(),
                          fieldDeclaration.Declaration.Type.ToString())
                      );
@@ -42,7 +42,7 @@ namespace RoslynParsing.Parser
 
                 else if(member is MethodDeclarationSyntax method)
                 {
-                    cls.Methods.Add(new CsharpClass.CsharpMethod(
+                    cls.Methods.Add(new CsharpMethod(
                         method.Identifier.ValueText,
                         method.ReturnType.ToString()));
                 }
@@ -55,8 +55,6 @@ namespace RoslynParsing.Parser
                 else if (member is ClassDeclarationSyntax classDeclaration)
                 {
                     cls.Name = classDeclaration.Identifier.ValueText;
-
-                    //cls.PrimaryKeyType = FindPrimaryKeyType(classDeclaration);//I don't care I really don't
 
                     try
                     {
@@ -71,11 +69,11 @@ namespace RoslynParsing.Parser
 
                 else if(member is ConstructorDeclarationSyntax constructorDeclaration)
                 {
-                    var constructor = new CsharpClass.CsharpConstructor(className);
+                    var constructor = new CsharpConstructor(className);
 
                     foreach(var param in constructorDeclaration.ParameterList.Parameters)
                     {
-                        constructor.Parameters.Add(new CsharpClass.CsharpParameters(param.Identifier.ToString(),param.Type.ToString()));
+                        constructor.Parameters.Add(new CsharpParameters(param.Identifier.ToString(),param.Type.ToString()));
                     }
 
                     cls.Constructors.Add(constructor);
@@ -86,33 +84,5 @@ namespace RoslynParsing.Parser
             return cls;
         }
 
-        //private static string FindPrimaryKeyType(ClassDeclarationSyntax classDeclaration)
-        //{
-        //    if (classDeclaration == null)
-        //    {
-        //        return null;
-        //    }
-
-        //    if (classDeclaration.BaseList == null)
-        //    {
-        //        return null;
-        //    }
-
-        //    foreach (var baseClass in classDeclaration.BaseList.Types)
-        //    {
-        //        var match = Regex.Match(baseClass.Type.ToString(), @"<(.*?)>");
-        //        if (match.Success)
-        //        {
-        //            var primaryKey = match.Groups[1].Value;
-
-        //            //if (AppConsts.PrimaryKeyTypes.Any(x => x.Value == primaryKey))
-        //            //{
-        //            //    return primaryKey;
-        //            //}
-        //        }
-        //    }
-
-        //    return null;
-        //}
     }
 }
