@@ -15,7 +15,8 @@ namespace RoslynParsing.Generators
 
             foreach (var item in GetAllProperties(csharpClass))
 	        {
-                outputString += "protected readonly " + item.Type + " " + item.expectedName + "\n";
+                outputString += $"protected readonly {item.Type} {item.expectedName} \n";
+                //outputString += "protected readonly " + item.Type + " " + item.expectedName + "\n";
 	        }   
 
             return outputString;
