@@ -7,6 +7,31 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <TextBox x:Name="ParsedOutput" />
+        <Grid.RowDefinitions>
+            <RowDefinition Height="20"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="4*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Menu Grid.Row="0" Grid.ColumnSpan="2" >
+            <!-- <MenuItem Header="File">
+                <MenuItem Header="Load Configuration"/>
+                <MenuItem Header="Load Plugin"/>
+                <MenuItem Header="Save Configuration"/>
+            </MenuItem> 
+            <MenuItem Header="Setup">
+                <MenuItem Header="Configure Test"/>
+            </MenuItem> -->
+        </Menu>
+        
+        <TextBox x:Name="ParsedOutput" Grid.Row="1" Grid.Column="0"/>
+
+        <StackPanel Grid.Column="1" Grid.Row="1">
+            <!--<CheckBox x:Name="MethodsChkBx" Content="Methods"/>
+            <CheckBox x:Name="PropertiesChkBx" Content="Properties"/> -->
+        </StackPanel>
+        
     </Grid>
 </Window>
