@@ -1,16 +1,7 @@
-[Oo]bj/
-[Bb]in/
-.nuget/
-_ReSharper.*
-packages/
-artifacts/
-*.user
 *.suo
-*.userprefs
-*DS_Store
-*.sln.ide
-*.testlog
-*.testlog
-# Visual Studio temp something
-.vs/
-/.vs/LifeCalculator/v16/Server/sqlite3
+*.user
+_ReSharper.*
+bin
+obj
+packages
+RoslynParsing/.vs/RoslynParsing/v16/.suo
