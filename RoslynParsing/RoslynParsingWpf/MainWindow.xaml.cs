@@ -38,6 +38,8 @@ namespace RoslynParsingWpf
             var csharpClass = CsharpClassParser.Parse(content);
 
             ParsedOutput.Text += Generator.expectedFieldsSetup(csharpClass);
+
+            ParsedOutput.Text += "\n" + Generator.MethodTestSetup(csharpClass);
         }
     }
 }

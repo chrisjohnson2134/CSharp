@@ -14,10 +14,11 @@
             DragLeave="Canvas_DragLeave" DragOver="Canvas_DragOver"
             Drop="Canvas_Drop">
             <Rectangle
-                x:Name="redRectangle" Canvas.Left="{Binding X, Mode=TwoWay}" Canvas.Top="{Binding Y, Mode=TwoWay}"
+                x:Name="redRectangle"  
                 Width="50" Height="50"
                 Fill="{Binding Color, ElementName=root}" IsHitTestVisible="{Binding IsChildHitTestVisible, ElementName=root}"
                 MouseMove="RedRectangle_MouseMove" />
+            <!-- .Left="{Binding X, Mode=TwoWay}" Canvas.Top="{Binding Y, Mode=TwoWay}" -->
         </Canvas>
     </Border>
 </UserControl>

@@ -12,8 +12,9 @@
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
 
-        <local:DragDropCanvas x:Name="redRectangle" Grid.Column="0" Color="Red" RemoveRectangleName="{Binding RemoveRectangleName}" RectangleDropCommand="{Binding SaveRectangleCommand}" RectangleRemoveCommand="{Binding DeleteRectangleCommand}"/>
+        <local:DragDropCanvas x:Name="redRectangle" Grid.Column="0" Color="Red" RemoveRectangleName="{Binding RemoveRectangleName}"  />
         <!-- Because of the VM setup sharing the X & Y Location on the rectangle this code won't work without modification -->
-        <!-- <local:DragDropCanvas Grid.Column="1" Color="Blue" RectangleDropCommand="{Binding SaveRectangleCommand}"/> -->
+        <!-- RectangleDropCommand="{Binding SaveRectangleCommand}" annoying for demo -->
+         <local:DragDropCanvas Grid.Column="1" Color="Blue" /> 
     </Grid>
 </Window>

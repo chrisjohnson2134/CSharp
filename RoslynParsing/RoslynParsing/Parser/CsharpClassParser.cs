@@ -58,6 +58,8 @@ namespace RoslynParsing.Parser
 
                     try
                     {
+                        if (classDeclaration.BaseList == null)
+                            continue;
                         var inheritedName = classDeclaration.BaseList.Types[0].ToString();
                         string filePath = Path.Combine(Directory.GetCurrentDirectory(), "..\\..\\Test", inheritedName + ".cs");
                         var subContent = File.ReadAllText(filePath);

@@ -51,7 +51,6 @@ C:\Users\bear\Documents\GitHub\CSharp\RoslynParsing\RoslynParsingWpf\bin\Debug\r
 C:\Users\bear\Documents\GitHub\CSharp\RoslynParsing\RoslynParsingWpf\bin\Debug\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
 C:\Users\bear\Documents\GitHub\CSharp\RoslynParsing\RoslynParsingWpf\bin\Debug\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
 C:\Users\bear\Documents\GitHub\CSharp\RoslynParsing\RoslynParsingWpf\bin\Debug\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
-C:\Users\bear\Documents\GitHub\CSharp\RoslynParsing\RoslynParsingWpf\obj\Debug\RoslynParsingWpf.csprojAssemblyReference.cache
 C:\Users\bear\Documents\GitHub\CSharp\RoslynParsing\RoslynParsingWpf\obj\Debug\RoslynParsingWpf.exe.config
 C:\Users\bear\Documents\GitHub\CSharp\RoslynParsing\RoslynParsingWpf\obj\Debug\MainWindow.g.cs
 C:\Users\bear\Documents\GitHub\CSharp\RoslynParsing\RoslynParsingWpf\obj\Debug\App.g.cs
@@ -65,3 +64,5 @@ C:\Users\bear\Documents\GitHub\CSharp\RoslynParsing\RoslynParsingWpf\obj\Debug\R
 C:\Users\bear\Documents\GitHub\CSharp\RoslynParsing\RoslynParsingWpf\obj\Debug\RoslynParsingWpf.csproj.CopyComplete
 C:\Users\bear\Documents\GitHub\CSharp\RoslynParsing\RoslynParsingWpf\obj\Debug\RoslynParsingWpf.exe
 C:\Users\bear\Documents\GitHub\CSharp\RoslynParsing\RoslynParsingWpf\obj\Debug\RoslynParsingWpf.pdb
+C:\Users\bear\Documents\GitHub\CSharp\RoslynParsing\RoslynParsingWpf\obj\Debug\RoslynParsingWpf.csproj.AssemblyReference.cache
+C:\Users\bear\Documents\GitHub\CSharp\RoslynParsing\RoslynParsingWpf\obj\Debug\RoslynParsingWpf.csproj.SuggestedBindingRedirects.cache

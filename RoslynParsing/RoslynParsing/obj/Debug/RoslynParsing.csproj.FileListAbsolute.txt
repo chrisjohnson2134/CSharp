@@ -103,8 +103,9 @@ C:\Users\bear\Documents\GitHub\CSharp\RoslynParsing\RoslynParsing\bin\Debug\ru\M
 C:\Users\bear\Documents\GitHub\CSharp\RoslynParsing\RoslynParsing\bin\Debug\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
 C:\Users\bear\Documents\GitHub\CSharp\RoslynParsing\RoslynParsing\bin\Debug\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
 C:\Users\bear\Documents\GitHub\CSharp\RoslynParsing\RoslynParsing\bin\Debug\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
-C:\Users\bear\Documents\GitHub\CSharp\RoslynParsing\RoslynParsing\obj\Debug\RoslynParsing.csprojAssemblyReference.cache
 C:\Users\bear\Documents\GitHub\CSharp\RoslynParsing\RoslynParsing\obj\Debug\RoslynParsing.csproj.CoreCompileInputs.cache
 C:\Users\bear\Documents\GitHub\CSharp\RoslynParsing\RoslynParsing\obj\Debug\RoslynParsing.csproj.CopyComplete
 C:\Users\bear\Documents\GitHub\CSharp\RoslynParsing\RoslynParsing\obj\Debug\RoslynParsing.exe
 C:\Users\bear\Documents\GitHub\CSharp\RoslynParsing\RoslynParsing\obj\Debug\RoslynParsing.pdb
+C:\Users\bear\Documents\GitHub\CSharp\RoslynParsing\RoslynParsing\obj\Debug\RoslynParsing.csproj.AssemblyReference.cache
+C:\Users\bear\Documents\GitHub\CSharp\RoslynParsing\RoslynParsing\obj\Debug\RoslynParsing.csproj.SuggestedBindingRedirects.cache
