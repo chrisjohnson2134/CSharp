@@ -41,5 +41,16 @@ namespace RoslynParsing.Generators
 
             return list;
         }
+
+        public static string MethodTestSetup(CsharpClass csharpClass)
+        {
+            string output = String.Empty;
+            foreach(var item in csharpClass.Methods)
+            {
+                output += item.Name + "\n";
+            }
+
+            return output;
+        }
     }
 }

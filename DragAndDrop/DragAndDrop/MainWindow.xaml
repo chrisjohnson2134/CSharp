@@ -1,0 +1,20 @@
+﻿<Window x:Class="DragAndDrop.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DragAndDrop"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+
+        <local:DragDropCanvas x:Name="redRectangle" Grid.Column="0" Color="Red" RemoveRectangleName="{Binding RemoveRectangleName}"  />
+        <!-- Because of the VM setup sharing the X & Y Location on the rectangle this code won't work without modification -->
+        <!-- RectangleDropCommand="{Binding SaveRectangleCommand}" annoying for demo -->
+         <local:DragDropCanvas Grid.Column="1" Color="Blue" /> 
+    </Grid>
+</Window>
