@@ -11,6 +11,7 @@
             <ColumnDefinition Width="AUTO"/>
             <ColumnDefinition Width="AUTO"/>
             <ColumnDefinition Width="AUTO"/>
+            <ColumnDefinition Width="AUTO"/>
             <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
@@ -21,7 +22,8 @@
         <Label Content="Item to Add : " Grid.Row="0" Grid.Column="0"/>
         <TextBox Text="{Binding AddItemName}" Width="150" Grid.Row="0" Grid.Column="1"/>
         <Button Content="Add Item" Command="{Binding AddCommand}" Grid.Row="0" Grid.Column="2" />
+        <ComboBox Content="Add Item" Command="{Binding AddCommand}" Grid.Row="0" Grid.Column="3" />
 
-        <DataGrid ItemsSource="{Binding ItemList}" IsReadOnly="True" Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="4"/>
+        <DataGrid ItemsSource="{Binding ItemList}" Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="5"/>
     </Grid>
 </Window>
