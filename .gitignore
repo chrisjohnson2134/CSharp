@@ -5,3 +5,6 @@ bin
 obj
 packages
 RoslynParsing/.vs/RoslynParsing/v16/.suo
+/StateMachine.SDK/.vs/StateMachine.SDK/DesignTimeBuild
+/StateMachine.SDK/.vs/StateMachine.SDK/FileContentIndex
+/StateMachine.SDK/.vs/StateMachine.SDK/v17
