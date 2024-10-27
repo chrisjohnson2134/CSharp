@@ -4,11 +4,15 @@ using StateMachine.SDK;
 State a = new State("a");
 State b = new State("b");
 
-bool userInput = false;
+bool key = false;
 
+a.AddStateMove(() => key, b);
+a.OffDelayTime = 2000;
+a.OnDelayTime = 0;
+a.StateAction = ActionAHandler;
 
-a.AddStateMove(() => userInput, b);
-b.AddStateMove(() => userInput, a);
+b.AddStateMove(() => !key, a);
+b.StateAction = ActionBHandler;
 
 List<State> states = new List<State>();
 states.Add(a);
@@ -16,16 +20,29 @@ states.Add(b);
 
 StateMachineRunner runner = new StateMachineRunner(a,states);
 
-Console.WriteLine($"Take Action {userInput} - Current State {runner.CurrentState}");
+char input = 'a';
+while(input != 'q')
+{
+    input = Console.ReadKey().KeyChar;
 
-userInput = !userInput;
-runner.TakeAction();
-Console.WriteLine($"Take Action {userInput} - Current State {runner.CurrentState}");
+    if (input == 'k')
+    {
+        key = true;
+    }
+    else if(input == 'u')
+    {
+        key = false;
+    }
 
-userInput = !userInput;
-runner.TakeAction();
-Console.WriteLine($"Take Action {userInput} - Current State {runner.CurrentState}");
+    runner.TakeAction();
+}
 
-userInput = !userInput;
-runner.TakeAction();
-Console.WriteLine($"Take Action {userInput} - Current State {runner.CurrentState}");
+void ActionAHandler()
+{
+    Console.WriteLine("a action");
+}
+
+void ActionBHandler()
+{
+    Console.WriteLine("b action");
+}

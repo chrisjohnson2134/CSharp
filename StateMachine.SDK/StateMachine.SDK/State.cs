@@ -11,9 +11,13 @@ namespace StateMachine.SDK
     {
         protected List<Tuple<Func<bool>, State>> _moveState;
 
-        public Action _stateAction { get; }
+        public Action StateAction { get; set; }
 
         public string StateName { get; }
+
+        public int OnDelayTime { get; set; }
+
+        public int OffDelayTime { get; set; }
 
         public State(string stateName)
         {
@@ -24,6 +28,11 @@ namespace StateMachine.SDK
         public void AddStateMove(Func<bool> predicate, State state)
         {
             _moveState.Add(new Tuple<Func<bool>, State>(predicate,state));
+        }
+
+        public void ActivateState()
+        {
+            StateAction?.Invoke();
         }
 
         public State CheckMove()
