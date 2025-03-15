@@ -1,0 +1,54 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\chris\\source\\repos\\CSharp\\RoslynParsing\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{95529752-39FE-4E3C-95B6-0CE536404B77}|DTOTestMaker\\DTOTestMaker.csproj|c:\\users\\chris\\source\\repos\\csharp\\roslynparsing\\dtotestmaker\\mainwindowvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{95529752-39FE-4E3C-95B6-0CE536404B77}|DTOTestMaker\\DTOTestMaker.csproj|solutionrelative:dtotestmaker\\mainwindowvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{95529752-39FE-4E3C-95B6-0CE536404B77}|DTOTestMaker\\DTOTestMaker.csproj|c:\\users\\chris\\source\\repos\\csharp\\roslynparsing\\dtotestmaker\\parser\\csharpclassparser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{95529752-39FE-4E3C-95B6-0CE536404B77}|DTOTestMaker\\DTOTestMaker.csproj|solutionrelative:dtotestmaker\\parser\\csharpclassparser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "CsharpClassParser.cs",
+              "DocumentMoniker": "C:\\Users\\chris\\source\\repos\\CSharp\\RoslynParsing\\DTOTestMaker\\Parser\\CsharpClassParser.cs",
+              "RelativeDocumentMoniker": "DTOTestMaker\\Parser\\CsharpClassParser.cs",
+              "ToolTip": "C:\\Users\\chris\\source\\repos\\CSharp\\RoslynParsing\\DTOTestMaker\\Parser\\CsharpClassParser.cs",
+              "RelativeToolTip": "DTOTestMaker\\Parser\\CsharpClassParser.cs",
+              "ViewState": "AQIAAAEAAAAAAAAAAAAcwBgAAAArAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-15T22:35:16.216Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MainWindowVM.cs",
+              "DocumentMoniker": "C:\\Users\\chris\\source\\repos\\CSharp\\RoslynParsing\\DTOTestMaker\\MainWindowVM.cs",
+              "RelativeDocumentMoniker": "DTOTestMaker\\MainWindowVM.cs",
+              "ToolTip": "C:\\Users\\chris\\source\\repos\\CSharp\\RoslynParsing\\DTOTestMaker\\MainWindowVM.cs",
+              "RelativeToolTip": "DTOTestMaker\\MainWindowVM.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAAoAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-15T22:32:52.269Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

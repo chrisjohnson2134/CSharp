@@ -21,7 +21,7 @@ namespace RoslynParsing
             Console.WriteLine("properties : ");
             foreach (var item in csharpClass.Properties)
             {
-                Console.WriteLine(item.expectedName);
+                Console.WriteLine($"{item.Name} - {item.Type}");
             }
 
             Console.WriteLine("methods : ");

@@ -3,12 +3,13 @@ using MVVM.Items;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
+using System.Windows.Controls;
 
 namespace MVVM.ViewModels
 {
     public class MainWindowViewModel
     {
-        public string AddItemName {get;set;}
+        public string AddItemName { get; set; }
         public BindingList<IItem> ItemList { get; set; }
         public List<string> Options { get; set; }
         public RelayCommand AddCommand { get; set; }
@@ -32,5 +33,6 @@ namespace MVVM.ViewModels
         {
             ItemList.Add(new Item(AddItemName));
         }
+
     }
 }

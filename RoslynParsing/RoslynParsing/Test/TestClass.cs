@@ -9,6 +9,7 @@ namespace RoslynParsing.Test
     public class TestClass : TestClassL2
     {
         public int fieldInTest;
+        public DependentClass DependentClass { get; set; }
 
         public TestClass()
         {
